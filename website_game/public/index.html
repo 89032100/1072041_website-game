@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zn_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="javascripts/member.js"></script>
+    <title>首頁</title>
+</head>
+
+<body>
+    <div class="UsableArea">
+        <div class="bg"><img src="img/bg.png" alt="">
+            <!-- logo -->
+            <span class="logo">
+                <img src="img/logo.png" alt="">
+            </span>
+            <!-- 登入框 -->
+            <span class="login">
+                <img src="img/login.png" alt="">
+            </span>
+            <!-- 帳號 -->
+            <div class="account">
+                帳號<input type="text" id="ac">
+            </div>
+            <!-- 密碼 -->
+            <div class="password">
+                密碼<input type="password" id="pw">
+            </div>
+            <!-- 登入按鈕 -->
+            <div class="loginbtn">
+                <input type="button" onclick="login()" value="登入">
+            </div>
+            <!-- 註冊按鈕 -->
+            <div class="signup">
+                <input type="button" onclick="register()" value="註冊" >
+            </div>
+            <!-- 遊客試玩 -->
+            <div class="visitor">
+                <input type="button" onclick="location.href='/public/lobby.html'" value="遊客試玩">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

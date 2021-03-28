@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei;
+    list-style: none;
+}
+
+/* 圖標字體申明 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?f16non');
+    src: url('fonts/icomoon.eot?f16non#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?f16non') format('truetype'), url('fonts/icomoon.woff?f16non') format('woff'), url('fonts/icomoon.svg?f16non#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #67c9bc;
+}
+
+.UsableArea {
+    position: relative;
+    width: 1025px;
+    height: 100%;
+    margin: auto;
+}
+
+.bg>img {
+    display: block;
+    margin: auto;
+}
+
+.header {
+    float: left;
+    margin-left: -9px;
+    width: 1025px;
+    height: 70px;
+    background-color: #fcbf66;
+    border-bottom: 3px solid black;
+}
+
+.header li {
+    margin-top: 13px;
+    font-size: 24px;
+}
+
+.username {
+    float: left;
+    width: 250px;
+    margin-left: 82px;
+}
+
+.COIN {
+    float: left;
+    margin-left: 150px;
+}
+
+.coin {
+    font-family: 'icomoon';
+    color: #f8f1bf;
+}
+
+.nav {
+    float: left;
+    margin-left: -9px;
+    width: 1025px;
+    height: 50px;
+    background-color: #f9f9d7;
+    border-bottom: 3px solid black;
+}
+
+.title {
+    float: left;
+    margin: 10px 642px 0 82px;
+    font-size: 24px;
+}
+
+.playerArea {
+    float: left;
+    margin-left: -9px;
+    width: 1025px;
+    height: 300px;
+    background-color: #f9f9d7;
+    border-bottom: 3px solid black;
+}
+
+.player>ul {
+    float: left;
+    margin: auto;
+}
+
+.playerArea .fieldA {
+    margin: 47px 0 0 82px;
+}
+
+.playerArea .fieldB, .playerArea .fieldC {
+    margin: 2px 0 0 82px;
+    background-image: url(../img/room2.png);
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 34px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.playerArea .field1 {
+    margin: 47px 0 0 40px;
+}
+
+.playerArea .field2, .playerArea .field3 {
+    background-image: url(../img/room2.png);
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 34px;
+    margin: 2px 0 0 40px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.playerArea .fieldC, .playerArea .field3 {
+    opacity: .5;
+}
+
+.badge0, .badge1, .badge2, .badge3, .badge4 {
+    float: left;
+}
+
+.badge0 img {
+    width: 24px;
+    margin: 0 0 0 82px;
+    opacity: 1;
+}
+
+.badge1 img {
+    width: 24px;
+    margin: 0 0 0 42px;
+    opacity: 1;
+}
+
+.badge2 img, .badge3 img, .badge4 img {
+    width: 24px;
+    margin: 0 4px 0 0;
+    opacity: .2;
+}
+
+/* 清除浮動 */
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 聊天室 */
+
+.chat {
+    float: left;
+    margin-left: -9px;
+    width: 588px;
+    height: 292px;
+    background-color: #f9f9d7;
+    border-right: 3px solid black;
+}
+
+#status-box {
+    text-align: right;
+    font-size: .6em;
+}
+
+.content {
+    width: 100%;
+    height: 259px;
+    border-bottom: 3px solid #000000;
+    /* border-radius: 5px; */
+    overflow: auto;
+}
+
+#send-box {
+    width: 100%;
+    /* margin-top: 8px; */
+    outline: none;
+    text-align: center;
+}
+
+#send-form>input:nth-child(1) {
+    margin-right: 10px;
+    width: 469px;
+    height: 26px;
+    background-color: #f9f9d7;
+    border: 2px solid #8f8f8f;
+}
+
+#send-form>input:nth-child(2) {
+    width: 65px;
+    height: 30px;
+    background-color: #fbe85e;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+#send-box input {
+    display: inline-block;
+}
+
+input[name="name"] {
+    width: 15%;
+}
+
+input[name="msg"] {
+    width: 70%;
+}
+
+input[type="button"] {
+    width: 10%;
+}
+
+.msg {
+    width: 73%;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+}
+
+.msg>span {
+    width: 25%;
+    display: inline-block;
+}
+
+.msg>span::before {
+    color: darkred;
+    content: " [ ";
+}
+
+.msg>span::after {
+    color: darkred;
+    content: " ] ";
+}
+
+/* 房間資訊 */
+
+.info {
+    position: relative;
+    /* display: table; */
+    float: right;
+    margin-right: 9px;
+    width: 434px;
+    height: 292px;
+    background-color: #f9f9d7;
+}
+
+.info ul:nth-child(1)>li {
+    margin: 13px 0 0 40px;
+    font-size: 20px;
+}
+
+.info li:nth-child(-n+1) {
+    float: left;
+}
+
+body .info li:nth-child(2) {
+    float: right;
+    margin-left: 0;
+    margin-right: 165px;
+}
+
+.info .gamebtn {
+    position: absolute;
+    top: 24px;
+    right: 35px;
+    background-color: #fbe85e;
+    width: 70px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.info ul:nth-child(2)>li {
+    margin-top: 51px;
+    font-size: 20px;
+}
+
+.info ul:nth-child(2)>li:nth-child(1) {
+    margin-left: -40px;
+}
+
+.info ul:nth-child(2)>li:nth-child(2) {
+    margin-right: 165px;
+}
+
+.plusbtn, .subrbtn {
+    background-color: #fbe85e;
+    width: 40px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.plusbtn {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+}
+
+.subrbtn {
+    position: absolute;
+    top: 100px;
+    right: 87px;
+}
+
+.info ul:nth-child(3) {
+    margin: 192px 0 0 120px;
+}
+
+.info ul:nth-child(3)>li>input {
+    margin-right: -34px;
+    background-color: #fbe85e;
+    width: 80px;
+    height: 42px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zn_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲房間</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="javascripts/member.js"></script>
+    <script src="javascripts/room.js"></script>
+    <script src="javascripts/Inroom.js"></script>
+    <script src="javascripts/refresh_inroom.js"></script>
+</head>
+<link rel="stylesheet" href="css/room.css">
+
+<body>
+    <div class="UsableArea">
+        <div class="bg">
+            <!-- 頭部 -->
+            <div class="header">
+                <ul>
+                    <li class="username" id="username">User0001</li>
+                    <li class="COIN"><a class="coin"></a><span id="coin">100</span></li>
+                    <!-- <li class="SHOP"><a class="shop" href="shop.html"></a></li> -->
+                </ul>
+            </div>
+            <!-- 導航欄 -->
+            <div class="nav">
+                <ul>
+                    <li class="title" id="roomtitle">0001遊戲房間</li>
+                </ul>
+            </div>
+            <!-- 玩家顯示 -->
+            <div class="playerArea clearfix">
+                <div>
+                    <span class="player">
+                        <ul>
+                            <li class="fieldA"><img src="img/room1.png" alt=""></li>
+                            <li class="fieldB"><span id="usernameInRoom">Username</span></li>
+                            <li class="fieldC" id="ready"><span>準備</span></li>
+                            <li class="badge0"><img src="goods/goods1.png" alt=""></li>
+                            <li class="badge2"><img src="goods/goods2.png" alt=""></li>
+                            <li class="badge3"><img src="goods/goods3.png" alt=""></li>
+                            <li class="badge4"><img src="goods/goods4.png" alt=""></li>
+
+                        </ul>
+                    </span>
+                    <span class="player">
+                        <ul>
+                            <li class="field1"><img src="img/room1.png" alt=""></li>
+                            <li class="field2"><span id="OtherusernameInRoom">-none-</span></li>
+                            <li class="field3" id="Otherready"><span>準備</span></li>
+                            <li class="badge1"><img src="goods/goods1.png" alt=""></li>
+                            <li class="badge2"><img src="goods/goods2.png" alt=""></li>
+                            <li class="badge3"><img src="goods/goods3.png" alt=""></li>
+                            <li class="badge4"><img src="goods/goods4.png" alt=""></li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+            <!-- 聊天室 -->
+            <div class="chat">
+                <div class="content" id="chat">
+                </div>
+                <div id="send-box">
+                    <form id="send-form">
+                        <!-- <input type="text" name="name" id="name" placeholder="暱稱"> -->
+                        <input type="text" name="msg" id="msg" placeholder="說點什麼？">
+                        <input type="button" onclick="chat()" value="送出">
+                    </form>
+                </div>
+            </div>
+            <!-- 輸入框 -->
+            <div class="chatinput">
+            </div>
+            <!-- 房間資訊 -->
+            <div class="info">
+                <ul>
+                    <li>遊戲</li>
+                    <li class="game" id="game">猜拳遊戲</li>
+                    <li><input class="gamebtn" type="button" onclick="changegame()" value="切換"></li>
+                </ul>
+                <ul>
+                    <li>每局遊玩金</li>
+                    <li class="bet" id="bet">--</li>
+                    <li><input class="subrbtn" type="button" onclick="betLOW()" value="-"></li>
+                    <li><input class="plusbtn" type="button" onclick="betHIGH()" value="+"></li>
+                </ul>
+                <ul>
+                    <li><input type="button" onclick="readyplay()" value="準備"></li>
+                    <li><input type="button" onclick="leaveroom()" value="離開"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zn_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲大廳</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="javascripts/member.js"></script>
+    <script src="javascripts/room.js"></script>
+    <script src="javascripts/refresh_lobby.js"></script>
+</head>
+<link rel="stylesheet" href="css/lobby.css">
+<body>
+    <div class="UsableArea">
+        <div class="bg">
+            <!-- 頭部 -->
+            <div class="header">
+                <ul>
+                    <li class="username" id="username">User0001</li>
+                    <li class="COIN" ><a class="coin"></a><span id="coin">100</span></li>
+                    <li class="logout"><input type="image" onclick="logout()" img src="img/logout.png"></input></li>
+                    <li class="SHOP"><a class="shop" href="shop.html"></a></li>
+                </ul>
+            </div>
+            <!-- 創建房間&快速加入 -->
+            <div class="CreateJoin">
+                <ul>
+                    <li><a><input class="create" type="button" onclick="creatroom()" value="創建房間"></a></li>
+                    <li><a href="room.html"><input class="join" type="button" value="快速加入"></a></li>
+                </ul>
+            </div>
+            <!-- 背景圖 -->
+            <img src="img/bg.png" alt="">
+            <!-- 遊戲房間 -->
+            <span class="lobby" id="container">
+            </span>
+        </div>
+
+    </div>
+</body>
+
+</html>

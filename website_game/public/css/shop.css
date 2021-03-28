@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?f16non');
+    src:  url('fonts/icomoon.eot?f16non#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?f16non') format('truetype'),
+      url('fonts/icomoon.woff?f16non') format('woff'),
+      url('fonts/icomoon.svg?f16non#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}  
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #67c9bc;
+}
+
+.UsableArea {
+    position: relative;
+    width: 1025px;
+    margin: auto;
+}
+
+.bg>img {
+    display: block;
+}
+
+.header {
+    float: left;
+    margin: auto;
+    width: 1025px;
+    height: 70px;
+    background-color: #fcbf66;
+    border-bottom: 3px solid black;
+}
+
+.header li {
+    margin-top: 13px;
+    font-size: 24px;
+}
+
+.username {
+    float: left;
+    width: 250px;
+    margin-left: 82px;
+}
+
+.COIN {
+    float: left;
+    margin-left: 150px;
+}
+
+.coin {
+    font-family: 'icomoon';
+    color: #f8f1bf;
+}
+
+.nav {
+    float: left;
+    margin: auto;
+    width: 1025px;
+    height: 90px;
+    background-color: #f9f9d7;
+    border-bottom: 3px solid black;
+}
+
+.title {
+    float: left;
+    margin: 30px 642px 0 82px;
+    font-size: 24px;
+}
+
+.exit {
+    float: left;
+    margin: 13px;
+    width: 155px;
+    height: 61px;
+    background-color: #fbe85e;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* 商品框 */
+.goods {
+    position: relative;
+    float: left;
+    margin: auto;
+    width: 1025px;
+    height: 606px;
+    background-color: #f9f9d7;
+}
+
+.goodsA {
+    float: left;
+}
+
+.goodsB {
+    float: left;
+    margin: 20px 0 0 35px;
+}
+
+.goods .gdsA {
+    margin: 20px 21px 0 82px;
+}
+
+.gdsinfoA,
+.costA {
+    margin: 2px 0 0 75px;
+    background-image: url(../img/shop2.png);
+    width: 131px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.gdsinfoB,
+.costB {
+    margin: 2px 0 0 -5px;
+    background-image: url(../img/shop2.png);
+    width: 131px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.costA> span,
+.costB> span {
+    font-family: 'icomoon';
+    color: #fdf7cc;
+}
+
+/* 商品 */
+.goods>input {
+    outline:none;
+}
+
+.goods1 {
+    position: absolute;
+    top: 30px;
+    left: 95px;
+}
+.goods2 {
+    position: absolute;
+    top: 30px;
+    left: 283px;
+}
+.goods3 {
+    position: absolute;
+    top: 30px;
+    left: 451px;
+}
+.goods4 {
+    position: absolute;
+    top: 30px;
+    left: 618px;
+}
+
+/* 清除浮動 */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
